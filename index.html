@@ -3,7 +3,7 @@
 <head>
     <style>
         :root {
-  --primary-color: orange;
+  --primary-color: black;
   --secondary-color: white;
   --theme-primary: black;
   --theme-secondary: white;
@@ -13,12 +13,13 @@ body {
   background-color: var(--secondary-color);
   /* hsla(14, 100%, 53%, 0.6); */
   font-family: "Verdana", "Geneva", sans-serif;
+      font-size: 12px;
 }
 
 .container {
   display: grid;
   grid-template-columns: 60px 1fr 60px;
-  grid-template-rows: 50px 1fr 30px;
+  grid-template-rows: 110px 1fr 30px;
   grid-gap: 5px;
 }
 
@@ -48,16 +49,16 @@ body {
 
 /* Child items. */
 
-/* .header-logo {
+.header-logo {
   float: left;
-  width: 100px;
-  background-color: var(--primary-color);
+  /* width: 100px;
+   background-color: var(--primary-color); */
   height: 50px;
-  color: var(--secondary-color);
-  font-size: 30px;
-  padding: 3px 5px;
+  color: var(--primary-color);
+  font-size: 16px;
+  padding: 20px 80px;
   box-sizing: border-box;
-} */
+}
 
 .header-settings {
   float: right;
@@ -87,6 +88,13 @@ body {
   color: var(--secondary-color);
 } */
 
+.content-note {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 3px 0;
+  display: block;
+}
+
 .footer-note {
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -95,16 +103,19 @@ body {
 }
 
 .header--theme-button {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 60px;
   margin: 10px 5px 0 0;
-  display: inline-block;
-  border-top: 15px solid var(--theme-primary);
-  border-bottom: 15px solid var(--theme-secondary);
+/*   display: inline-block;
+  border-top: 50px solid var(--theme-secondary);*/
+  border-bottom: 5px solid var(--theme-primary);
+  background-color: var(--theme-secondary);
   border-right: 0;
   border-left: 0;
   padding: 0;
   box-shadow: 0 0 3px gray;
+  text-align: center;
+    font-size: 8px;
 }
 
 .header--theme-button:hover {
@@ -119,22 +130,26 @@ body {
 <body>
     <div class="container">
   <div class="header">
-    <!-- <div class="header-logo">
-      LOGO
-    </div> -->
+   <div class="header-logo">
+      Make your Screen Light choice:
+    </div>
     <div class="header-settings">
-      <button type="button" class="header--theme-button active" style="--theme-primary:orange; --theme-secondary:white;">
-          </button>
-      <button type="button" class="header--theme-button" style="--theme-primary:#2196F3; --theme-secondary:#eee;">
-          </button>
-      <button type="button" class="header--theme-button" style="--theme-primary:purple; --theme-secondary:white;">
-          </button>
-      <button type="button" class="header--theme-button" style="--theme-primary:#F44336; --theme-secondary:white;">
-          </button>
-      <button type="button" class="header--theme-button" style="--theme-primary:green; --theme-secondary:white;">
-          </button>
-      <button type="button" class="header--theme-button" style="--theme-primary:#FFEB3B; --theme-secondary:#222;">
-          </button>
+      <button type="button" class="header--theme-button active" style="--theme-primary:black; --theme-secondary:white;">
+          White & Black</button>
+          <button type="button" class="header--theme-button active" style="--theme-primary:GAINSBORO; --theme-secondary:white;">
+              White</button>
+      <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:ANTIQUEWHITE;">
+          Antique White</button>
+      <button tyßpe="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:AZURE;">
+          Azure</button>
+      <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:GHOSTWHITE;">
+          Ghost White</button>
+      <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:MISTYROSE;">
+          Misty Rose</button>
+      <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:SKYBLUE;">
+          Sky Blue</button>
+          <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:LEMONCHIFFON;">
+              Lemon Chiffon</button>
     </div>
   </div>
 
@@ -155,17 +170,19 @@ body {
 
 
   <div class="content">
+        <span class="content-note">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis id tenetur repudiandae deserunt, ipsam quisquam dicta tempora. Temporibus, vel, veritatis.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos odio id repellat quam, assumenda magnam! Beatae perferendis error exercitationem molestias explicabo earum ipsam maiores ullam natus dolorum, dolorem itaque reiciendis
       nihil placeat incidunt aperiam tempora, commodi eveniet. Minima iusto porro iste quae dignissimos neque dolor adipisci non, soluta nisi!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem blanditiis exercitationem excepturi, impedit iure.</p>
+        </span>
   </div>
 
   <div class="footer">
     <span class="footer-note">
-          Lorem ipsum dolor sit amet.
-        </span>
+          ColorandHue.com by <a href="https://twitter.com/DarraghRogan">Darragh Rogan</a> 2018
+          </span>
   </div>
 </div>
 
