@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Color and Hue - turn your screen into a light</title>
     <style>
         :root {
-  --primary-color: black;
+  --primary-color: gray;
   --secondary-color: white;
   --theme-primary: black;
   --theme-secondary: white;
@@ -42,9 +43,20 @@ body {
 
 .footer {
   grid-row: 3;
-  grid-column: 1 / 3;
+  grid-column: 2 / 3;
   text-align: center;
 }
+
+/* unvisited link */
+a:link {
+    color: var(--primary-color);
+}
+
+/* visited link */
+a:visited {
+    color: var(--primary-color);
+}
+
 
 
 /* Child items. */
@@ -104,11 +116,11 @@ body {
 
 .header--theme-button {
   height: 40px;
-  width: 60px;
+  width: 61px;
   margin: 10px 5px 0 0;
 /*   display: inline-block;
   border-top: 50px solid var(--theme-secondary);*/
-  border-bottom: 5px solid var(--theme-primary);
+  border-bottom: 3px solid var(--theme-primary);
   background-color: var(--theme-secondary);
   border-right: 0;
   border-left: 0;
@@ -116,6 +128,7 @@ body {
   box-shadow: 0 0 3px gray;
   text-align: center;
     font-size: 8px;
+    color: var(--primary-color);
 }
 
 .header--theme-button:hover {
@@ -134,22 +147,24 @@ body {
       Make your Screen Light choice:
     </div>
     <div class="header-settings">
-      <button type="button" class="header--theme-button active" style="--theme-primary:black; --theme-secondary:white;">
-          White & Black</button>
-          <button type="button" class="header--theme-button active" style="--theme-primary:GAINSBORO; --theme-secondary:white;">
+      <button type="button" class="header--theme-button active" style="--theme-primary:gray; --theme-secondary:white;">
+          White (Legible)</button>
+          <button type="button" class="header--theme-button active" style="--theme-primary:WHITESMOKE; --theme-secondary:white;">
               White</button>
-      <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:ANTIQUEWHITE;">
+      <button type="button" class="header--theme-button" style="--theme-primary:WHITESMOKE; --theme-secondary:ANTIQUEWHITE;">
           Antique White</button>
-      <button tyßpe="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:AZURE;">
+      <button tyßpe="button" class="header--theme-button" style="--theme-primary:WHITESMOKE; --theme-secondary:AZURE;">
           Azure</button>
-      <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:GHOSTWHITE;">
+      <button type="button" class="header--theme-button" style="--theme-primary:WHITESMOKE; --theme-secondary:GHOSTWHITE;">
           Ghost White</button>
-      <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:MISTYROSE;">
+      <button type="button" class="header--theme-button" style="--theme-primary:WHITESMOKE; --theme-secondary:MISTYROSE;">
           Misty Rose</button>
-      <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:SKYBLUE;">
+      <button type="button" class="header--theme-button" style="--theme-primary: #92d3ed; --theme-secondary:SKYBLUE;">
           Sky Blue</button>
-          <button type="button" class="header--theme-button" style="--theme-primary:GAINSBORO; --theme-secondary:LEMONCHIFFON;">
+          <button type="button" class="header--theme-button" style="--theme-primary:WHITESMOKE; --theme-secondary:LEMONCHIFFON;">
               Lemon Chiffon</button>
+              <button type="button" class="header--theme-button" style="--theme-primary:#ffe4cc; --theme-secondary:PEACHPUFF;">
+                  Peach Puff</button>
     </div>
   </div>
 
@@ -171,17 +186,19 @@ body {
 
   <div class="content">
         <span class="content-note">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ea.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis id tenetur repudiandae deserunt, ipsam quisquam dicta tempora. Temporibus, vel, veritatis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos odio id repellat quam, assumenda magnam! Beatae perferendis error exercitationem molestias explicabo earum ipsam maiores ullam natus dolorum, dolorem itaque reiciendis
-      nihil placeat incidunt aperiam tempora, commodi eveniet. Minima iusto porro iste quae dignissimos neque dolor adipisci non, soluta nisi!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dolorem blanditiis exercitationem excepturi, impedit iure.</p>
+    <p>Color and Hue offers the possibility to use your computer screen as a light. Maximise your browser window, disable your screensaver, and choose your colour from above.</p>
+    <p>This can be an excellent way to give old devices an occasional modern use: to create interesting lighting effects in spaces, particuarly if your vintage device is an industrial design icon. Obviously, this shouldn't be used as a continuous light due to relatively high watt/lumen energy consumption. Additonally, the brightness & accuracy of the colour delivered is completely dependant upon the accuracy of your device screen, and how it's various settings are configured (e.g. colour temperature, brightness, contrast etc.)</p>
+    <p>In the near term, I intend releasing a standalone screensaver for Mac OS X (Universal Binary) & Windows 98+, as soon as I figure out how to cobble together snippets of code from Stack Overflow. This will be accessible on <a href="https://github.com/DarraghRogan/Color-And-Hue">GitHub</a></p>
+    <p>Longer term, it is my ambition to integrate some luminaire class code from one of the IOT community suites (e.g. Hue or HomeKit) to enable vintage devices have their screen output be controlled in tandem with contemporary IOT devices.</p>
+    <p>I also wish to include some code (on this webpage) to output the ideal light colour based on the time of day (a la Nightshift or equivalent Circadian Rhythm methodology). I wish to investigate some means of reporting back system parameters to the user such as current brightness settings etc, depending upon what is avaiable via the web browser. And assess if there is a non malware triggering fullscreen request which can be integrated to the colour buttons.</p>
+    <p>This webpage has been principally adapted from code by <a href="http://www.jeremyharris.me">Jeremy Harris</a> on <a href="https://stackoverflow.com/a/8796161">Stack Overflow.</a>The website is accessible using HTTP rather than HTTPS, in order to permit older web connected devices access it (as often they do not recognise modern SSL certificates etc.). Whilst not the case yet, the intention is that all code required will be within the one page, and be both compatible and lightweight enough to work on 1990s era web browsers.</p>
         </span>
   </div>
 
   <div class="footer">
     <span class="footer-note">
-          ColorandHue.com by <a href="https://twitter.com/DarraghRogan">Darragh Rogan</a> 2018
+          ColorandHue.com by <a href="https://twitter.com/DarraghRogan">Darragh Rogan</a> 2018.
+          <br>All work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
           </span>
   </div>
 </div>
