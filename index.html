@@ -14,7 +14,8 @@ body {
   background-color: var(--secondary-color);
   /* hsla(14, 100%, 53%, 0.6); */
   font-family: "Verdana", "Geneva", sans-serif;
-      font-size: 12px;
+  font-size: 12px;
+  color: var(--primary-color)
 }
 
 .container {
@@ -101,15 +102,15 @@ a:visited {
 } */
 
 .content-note {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  /* color: var(--primary-color);
+  background-color: var(--secondary-color); */
   padding: 3px 0;
   display: block;
 }
 
 .footer-note {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  /* color: var(--primary-color);
+  background-color: var(--secondary-color); */
   padding: 3px 0;
   display: block;
 }
@@ -151,7 +152,8 @@ a:visited {
           White (Legible)</button>
             <script type="text/javascript">
             function scene1() {
-              document.body.style.setProperty("--secondary-color", "white");
+              document.body.style.backgroundColor = 'blue';
+              document.body.style.color = 'yellow';              
               document.body.style.setProperty("--primary-color", "gray");
             }
             </script>
