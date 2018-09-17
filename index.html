@@ -150,9 +150,12 @@ a:visited {
       Make your Screen Light choice:
     </div>
     <div class="header-settings">
-      <button type="button" class="header--theme-button" style="background:white;" onclick="scene1()">
-          White (Legible)</button>
+      <button type="button" class="header--theme-button" style="background:white; color:gray" onclick="scene1()">
+          Instructions</button>
             <script type="text/javascript">
+
+            var elem = document.documentElement;
+
             function scene1() {
               document.body.style.backgroundColor = 'white';
               document.body.style.color = 'gray';
@@ -163,21 +166,44 @@ a:visited {
               elem.appendChild(style);
               document.getElementsByTagName("head")[0].appendChild(elem);
 
+              if (document.exitFullscreen) {
+                  document.exitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                  document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                  document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                  document.msExitFullscreen();
+                }
+
             }
             </script>
 
       <button type="button" class="header--theme-button" style="background:white;" onclick="scene2()">
               White</button>
               <script type="text/javascript">
+
+              var elem = document.documentElement;
+
               function scene2() {
               document.body.style.backgroundColor = 'white';
-              document.body.style.color = 'WHITESMOKE';
+              document.body.style.color = 'white';
 
               var elem = document.createElement('style');
               elem.setAttribute("type", "text/css");
-              var style = document.createTextNode("A:link, A:visited { color: WHITESMOKE; }")
+              var style = document.createTextNode("A:link, A:visited { color: white; }")
               elem.appendChild(style);
               document.getElementsByTagName("head")[0].appendChild(elem);
+
+              if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+              } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+              } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+              } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+              }
 
               }
               </script>
@@ -185,15 +211,28 @@ a:visited {
       <button type="button" class="header--theme-button" style="background:ANTIQUEWHITE;" onclick="scene3()">
           Antique White</button>
           <script type="text/javascript">
+
+          var elem = document.documentElement;
+
           function scene3() {
             document.body.style.backgroundColor = 'ANTIQUEWHITE';
-            document.body.style.color = 'WHITESMOKE';
+            document.body.style.color = 'ANTIQUEWHITE';
 
             var elem = document.createElement('style');
             elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: WHITESMOKE; }")
+            var style = document.createTextNode("A:link, A:visited { color: ANTIQUEWHITE; }")
             elem.appendChild(style);
             document.getElementsByTagName("head")[0].appendChild(elem);
+
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+              elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+              elem.msRequestFullscreen();
+            }
 
           }
           </script>
@@ -201,15 +240,28 @@ a:visited {
       <button type="button" class="header--theme-button" style="background:AZURE;" onclick="scene4()">
           Azure</button>
           <script type="text/javascript">
+
+          var elem = document.documentElement;
+
           function scene4() {
             document.body.style.backgroundColor = 'AZURE';
-            document.body.style.color = 'WHITESMOKE';
+            document.body.style.color = 'AZURE';
 
             var elem = document.createElement('style');
             elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: WHITESMOKE; }")
+            var style = document.createTextNode("A:link, A:visited { color: AZURE; }")
             elem.appendChild(style);
             document.getElementsByTagName("head")[0].appendChild(elem);
+
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+              elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+              elem.msRequestFullscreen();
+            }
 
           }
           </script>
@@ -217,15 +269,28 @@ a:visited {
       <button type="button" class="header--theme-button" style="background:GHOSTWHITE;" onclick="scene5()">
           Ghost White</button>
           <script type="text/javascript">
+
+          var elem = document.documentElement;
+
           function scene5() {
             document.body.style.backgroundColor = 'GHOSTWHITE';
-            document.body.style.color = 'WHITESMOKE';
+            document.body.style.color = 'GHOSTWHITE';
 
             var elem = document.createElement('style');
             elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: WHITESMOKE; }")
+            var style = document.createTextNode("A:link, A:visited { color: GHOSTWHITE; }")
             elem.appendChild(style);
             document.getElementsByTagName("head")[0].appendChild(elem);
+
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+              elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+              elem.msRequestFullscreen();
+            }
 
           }
           </script>
@@ -233,15 +298,28 @@ a:visited {
       <button type="button" class="header--theme-button" style="background:MISTYROSE;" onclick="scene6()">
           Misty Rose</button>
           <script type="text/javascript">
+
+          var elem = document.documentElement;
+
           function scene6() {
             document.body.style.backgroundColor = 'MISTYROSE';
-            document.body.style.color = 'WHITESMOKE';
+            document.body.style.color = 'MISTYROSE';
 
             var elem = document.createElement('style');
             elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: WHITESMOKE; }")
+            var style = document.createTextNode("A:link, A:visited { color: MISTYROSE; }")
             elem.appendChild(style);
             document.getElementsByTagName("head")[0].appendChild(elem);
+
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+              elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+              elem.msRequestFullscreen();
+            }
 
           }
           </script>
@@ -249,15 +327,28 @@ a:visited {
       <button type="button" class="header--theme-button" style="background:SKYBLUE;" onclick="scene7()">
           Sky Blue</button>
           <script type="text/javascript">
+
+          var elem = document.documentElement;
+
           function scene7() {
             document.body.style.backgroundColor = 'SKYBLUE';
-            document.body.style.color = '#92d3ed';
+            document.body.style.color = 'SKYBLUE';
 
             var elem = document.createElement('style');
             elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: #92d3ed; }")
+            var style = document.createTextNode("A:link, A:visited { color: SKYBLUE; }")
             elem.appendChild(style);
             document.getElementsByTagName("head")[0].appendChild(elem);
+
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+              elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+              elem.msRequestFullscreen();
+            }
 
           }
           </script>
@@ -265,15 +356,28 @@ a:visited {
       <button type="button" class="header--theme-button" style="background:LEMONCHIFFON;" onclick="scene8()">
               Lemon Chiffon</button>
               <script type="text/javascript">
+
+              var elem = document.documentElement;
+              
               function scene8() {
                 document.body.style.backgroundColor = 'LEMONCHIFFON';
-                document.body.style.color = 'WHITESMOKE';
+                document.body.style.color = 'LEMONCHIFFON';
 
                 var elem = document.createElement('style');
                 elem.setAttribute("type", "text/css");
-                var style = document.createTextNode("A:link, A:visited { color: WHITESMOKE; }")
+                var style = document.createTextNode("A:link, A:visited { color: LEMONCHIFFON; }")
                 elem.appendChild(style);
                 document.getElementsByTagName("head")[0].appendChild(elem);
+
+                if (elem.requestFullscreen) {
+                  elem.requestFullscreen();
+                } else if (elem.mozRequestFullScreen) { /* Firefox */
+                  elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                  elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                  elem.msRequestFullscreen();
+                }
 
               }
               </script>
@@ -281,15 +385,28 @@ a:visited {
       <button type="button" class="header--theme-button" style="background:PEACHPUFF;" onclick="scene9()">
                   Peach Puff</button>
                   <script type="text/javascript">
+
+                  var elem = document.documentElement;
+
                   function scene9() {
                     document.body.style.backgroundColor = 'PEACHPUFF';
-                    document.body.style.color = '#ffe4cc';
+                    document.body.style.color = 'PEACHPUFF';
 
                     var elem = document.createElement('style');
                     elem.setAttribute("type", "text/css");
-                    var style = document.createTextNode("A:link, A:visited { color: #ffe4cc; }")
+                    var style = document.createTextNode("A:link, A:visited { color: PEACHPUFF; }")
                     elem.appendChild(style);
                     document.getElementsByTagName("head")[0].appendChild(elem);
+
+                      if (elem.requestFullscreen) {
+                        elem.requestFullscreen();
+                      } else if (elem.mozRequestFullScreen) { /* Firefox */
+                        elem.mozRequestFullScreen();
+                      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                        elem.webkitRequestFullscreen();
+                      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                        elem.msRequestFullscreen();
+                      }
 
                   }
                   </script>
