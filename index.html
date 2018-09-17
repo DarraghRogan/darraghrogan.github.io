@@ -4,18 +4,18 @@
   <title>Color and Hue - turn your screen into a light</title>
     <style>
         :root {
-  --primary-color: gray;
+  /* --primary-color: gray;
   --secondary-color: white;
   --theme-primary: gray;
-  --theme-secondary: white;
+  --theme-secondary: white; */
 }
 
 body {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   /* hsla(14, 100%, 53%, 0.6); */
-  font-family: "Verdana", "Geneva", sans-serif;
+  font-family: "Geneva", "Verdana", sans-serif;
   font-size: 12px;
-  color: var(--primary-color)
+  color: gray
 }
 
 .container {
@@ -67,7 +67,7 @@ a:visited {
   /* width: 100px;
    background-color: var(--primary-color); */
   height: 50px;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   font-size: 16px;
   padding: 20px 80px;
   box-sizing: border-box;
@@ -152,9 +152,8 @@ a:visited {
           White (Legible)</button>
             <script type="text/javascript">
             function scene1() {
-              document.body.style.backgroundColor = 'blue';
-              document.body.style.color = 'yellow';              
-              document.body.style.setProperty("--primary-color", "gray");
+              document.body.style.backgroundColor = 'white';
+              document.body.style.color = 'gray';
             }
             </script>
 
@@ -162,8 +161,8 @@ a:visited {
               White</button>
               <script type="text/javascript">
               function scene2() {
-                document.body.style.setProperty("--secondary-color", "white");
-                document.body.style.setProperty("--primary-color", "WHITESMOKE");
+              document.body.style.backgroundColor = 'white';
+              document.body.style.color = 'WHITESMOKE';
               }
               </script>
 
@@ -171,8 +170,8 @@ a:visited {
           Antique White</button>
           <script type="text/javascript">
           function scene3() {
-            document.body.style.setProperty("--secondary-color", "ANTIQUEWHITE");
-            document.body.style.setProperty("--primary-color", "WHITESMOKE");
+            document.body.style.backgroundColor = 'ANTIQUEWHITE';
+            document.body.style.color = 'WHITESMOKE';
           }
           </script>
 
@@ -180,8 +179,8 @@ a:visited {
           Azure</button>
           <script type="text/javascript">
           function scene4() {
-            document.body.style.setProperty("--secondary-color", "AZURE");
-            document.body.style.setProperty("--primary-color", "WHITESMOKE");
+            document.body.style.backgroundColor = 'AZURE';
+            document.body.style.color = 'WHITESMOKE';
           }
           </script>
 
@@ -189,8 +188,8 @@ a:visited {
           Ghost White</button>
           <script type="text/javascript">
           function scene5() {
-            document.body.style.setProperty("--secondary-color", "GHOSTWHITE");
-            document.body.style.setProperty("--primary-color", "WHITESMOKE");
+            document.body.style.backgroundColor = 'GHOSTWHITE';
+            document.body.style.color = 'WHITESMOKE';
           }
           </script>
 
@@ -198,8 +197,8 @@ a:visited {
           Misty Rose</button>
           <script type="text/javascript">
           function scene6() {
-            document.body.style.setProperty("--secondary-color", "MISTYROSE");
-            document.body.style.setProperty("--primary-color", "WHITESMOKE");
+            document.body.style.backgroundColor = 'MISTYROSE';
+            document.body.style.color = 'WHITESMOKE';
           }
           </script>
 
@@ -207,8 +206,8 @@ a:visited {
           Sky Blue</button>
           <script type="text/javascript">
           function scene7() {
-            document.body.style.setProperty("--secondary-color", "SKYBLUE");
-            document.body.style.setProperty("--primary-color", "#92d3ed");
+            document.body.style.backgroundColor = 'SKYBLUE';
+            document.body.style.color = '#92d3ed';
           }
           </script>
 
@@ -216,8 +215,8 @@ a:visited {
               Lemon Chiffon</button>
               <script type="text/javascript">
               function scene8() {
-                document.body.style.setProperty("--secondary-color", "LEMONCHIFFON");
-                document.body.style.setProperty("--primary-color", "WHITESMOKE");
+                document.body.style.backgroundColor = 'LEMONCHIFFON';
+                document.body.style.color = 'WHITESMOKE';
               }
               </script>
 
@@ -225,8 +224,8 @@ a:visited {
                   Peach Puff</button>
                   <script type="text/javascript">
                   function scene9() {
-                    document.body.style.setProperty("--secondary-color", "PEACHPUFF");
-                    document.body.style.setProperty("--primary-color", "#ffe4cc");
+                    document.body.style.backgroundColor = 'PEACHPUFF';
+                    document.body.style.color = '#ffe4cc';
                   }
                   </script>
 
