@@ -18,11 +18,11 @@
 }
 
 body {
-  /* background-color: var(--secondary-color); */
+background-color: #f2f3f4;
   /* hsla(14, 100%, 53%, 0.6); */
   font-family: "opendyslexic3", "Geneva", "Verdana", sans-serif;
   font-size: 12px;
-  color: gray
+  color: #373D3F
 
 }
 
@@ -157,19 +157,19 @@ a:visited {
       Make your Screen Light choice:
     </div>
     <div class="header-settings">
-      <button type="button" class="header--theme-button" style="background:white; color:gray" onclick="scene1()">
-          Instructions</button>
+      <button type="button" class="header--theme-button" style="background:#f2f3f4; color:#373D3F" onclick="scene1()">
+          Escape</button>
             <script type="text/javascript">
 
             var elem = document.documentElement;
 
             function scene1() {
-              document.body.style.backgroundColor = 'white';
-              document.body.style.color = 'gray';
+              document.body.style.backgroundColor = '#f2f3f4';
+              document.body.style.color = '#373D3F';
 
               var elem = document.createElement('style');
               elem.setAttribute("type", "text/css");
-              var style = document.createTextNode("A:link, A:visited { color: gray; }")
+              var style = document.createTextNode("A:link, A:visited { color: #373D3F; }")
               elem.appendChild(style);
               document.getElementsByTagName("head")[0].appendChild(elem);
 
@@ -439,7 +439,7 @@ a:visited {
 
   <div class="content">
         <span class="content-note">
-    <p>Color and Hue offers the possibility to use your computer screen as a light. Disable your screensaver / powersaver, maximise your browser window, and choose your colour from above.</p>
+    <p>Color and Hue offers the possibility to use your computer screen as a light. Disable your screensaver / powersaver, and choose your colour from above - the window should maximise automatically. Press ESC on your keyboard or click the Escape button to come back this screen.</p>
     <p>This can be an excellent way to give old devices an occasional modern use: to create interesting lighting effects in spaces, particuarly if your vintage device is an industrial design icon. Obviously, this shouldn't be used as a continuous light due to relatively high watt/lumen energy consumption. Additonally, the brightness & accuracy of the colour delivered is completely dependant upon the accuracy of your device screen, and how it's various settings are configured (e.g. colour temperature, brightness, contrast etc.)</p>
     <p>In the near term, I intend releasing a standalone screensaver for Mac OS X (Universal Binary) & Windows 98+, as soon as I figure out how to cobble together snippets of code from Stack Overflow. This will be accessible on <a href="https://github.com/DarraghRogan/Color-And-Hue">GitHub</a></p>
     <p>Longer term, it is my ambition to integrate some luminaire class code from one of the IOT community suites (e.g. Hue or HomeKit) to enable vintage devices have their screen output be controlled in tandem with contemporary IOT devices.</p>
