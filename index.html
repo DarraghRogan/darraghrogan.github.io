@@ -34,8 +34,8 @@ background-color: #f2f3f4;
 
 .container {
   display: grid;
-  grid-template-columns: 60px 1fr 10px;
-  grid-template-rows: 110px 1fr 30px;;
+  grid-template-columns: 80px 1fr 10px;
+  grid-template-rows: max-content 1fr 30px;;
   grid-gap: 5px;
 }
 
@@ -44,11 +44,12 @@ background-color: #f2f3f4;
   grid-column: 1 / 3;
 }
 
-/* .nav {
+ .nav {
   grid-column: 1;
   grid-row: 2;
-  border-right: 1px solid var(--primary-color);
-} */
+  /* border-right: 1px solid var(--primary-color); */
+  text-align: center;
+}
 
 .content {
   grid-column: 2;
@@ -83,16 +84,16 @@ a:visited {
   height: 50px;
   /* color: var(--primary-color); */
   font-size: 16px;
-  padding: 20px 80px;
+  padding: 20px 0px;
   box-sizing: border-box;
 }
 
-.header-settings {
+/* .header-settings {
   float: right;
   height: 50px;
-}
-
-/* .nav-links {
+} */
+/*
+ .nav-links {
   list-style: none;
   margin: 5px 0 0 0;
   padding: 0;
@@ -129,11 +130,11 @@ a:visited {
   display: block;
 }
 
-.header--theme-button {
+.nav--theme-button {
   border-radius: 2px;
   height: 40px;
   width: 60px;
-  margin: 10px 5px 0 0;
+  margin: 15px 5px 0 0;
   display: inline-block;
 /*     border-top: 50px solid var(--theme-secondary);*/
   border-bottom: 3px solid silver;
@@ -147,11 +148,11 @@ a:visited {
   color: #373D3F
 }
 
-.header--theme-button:hover {
+.nav--theme-button:hover {
   box-shadow: 2px 2px 2px silver;
 }
 
-.header--theme-button.active {
+.nav--theme-button.active {
   box-shadow: 3px 3px 3px silver;
 }
     </style>
@@ -160,51 +161,230 @@ a:visited {
     <div class="container">
   <div class="header">
    <div class="header-logo">
-      Make your Screen Light choice:
+      Color and Hue - turn your screen into a light
     </div>
-    <div class="header-settings">
-      <button type="button" class="header--theme-button" style="background:#f2f3f4" onclick="scene1()">
-          Escape / Home</button>
+
+  </div>
+
+<div class="nav">
+
+  <div class="header-settings">
+    <button type="button" class="nav--theme-button" style="background:#f2f3f4" onclick="scene1()">
+        Escape / Home</button>
+          <script type="text/javascript">
+
+          var elem = document.documentElement;
+
+          function scene1() {
+            document.body.style.backgroundColor = '#f2f3f4';
+            document.body.style.color = '#373D3F';
+
+            var elem = document.createElement('style');
+            elem.setAttribute("type", "text/css");
+            var style = document.createTextNode("A:link, A:visited { color: #373D3F; }")
+            elem.appendChild(style);
+            document.getElementsByTagName("head")[0].appendChild(elem);
+
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+              } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+              } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+              } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+              }
+
+          }
+          </script>
+
+    <button type="button" class="nav--theme-button" style="background:white;" onclick="scene2()">
+            Pure White</button>
             <script type="text/javascript">
 
             var elem = document.documentElement;
 
-            function scene1() {
-              document.body.style.backgroundColor = '#f2f3f4';
-              document.body.style.color = '#373D3F';
+            function scene2() {
+            document.body.style.backgroundColor = 'white';
+            document.body.style.color = 'white';
 
-              var elem = document.createElement('style');
-              elem.setAttribute("type", "text/css");
-              var style = document.createTextNode("A:link, A:visited { color: #373D3F; }")
-              elem.appendChild(style);
-              document.getElementsByTagName("head")[0].appendChild(elem);
+            var elem = document.createElement('style');
+            elem.setAttribute("type", "text/css");
+            var style = document.createTextNode("A:link, A:visited { color: white; }")
+            elem.appendChild(style);
+            document.getElementsByTagName("head")[0].appendChild(elem);
 
-              if (document.exitFullscreen) {
-                  document.exitFullscreen();
-                } else if (document.mozCancelFullScreen) {
-                  document.mozCancelFullScreen();
-                } else if (document.webkitExitFullscreen) {
-                  document.webkitExitFullscreen();
-                } else if (document.msExitFullscreen) {
-                  document.msExitFullscreen();
-                }
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+              elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+              elem.msRequestFullscreen();
+            }
 
             }
             </script>
 
-      <button type="button" class="header--theme-button" style="background:white;" onclick="scene2()">
-              Pure White</button>
-              <script type="text/javascript">
+    <button type="button" class="nav--theme-button" style="background:ANTIQUEWHITE;" onclick="scene3()">
+        Antique White</button>
+        <script type="text/javascript">
 
-              var elem = document.documentElement;
+        var elem = document.documentElement;
 
-              function scene2() {
-              document.body.style.backgroundColor = 'white';
-              document.body.style.color = 'white';
+        function scene3() {
+          document.body.style.backgroundColor = 'ANTIQUEWHITE';
+          document.body.style.color = 'ANTIQUEWHITE';
+
+          var elem = document.createElement('style');
+          elem.setAttribute("type", "text/css");
+          var style = document.createTextNode("A:link, A:visited { color: ANTIQUEWHITE; }")
+          elem.appendChild(style);
+          document.getElementsByTagName("head")[0].appendChild(elem);
+
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+          }
+
+        }
+        </script>
+
+    <button type="button" class="nav--theme-button" style="background:AZURE;" onclick="scene4()">
+        Azure Colour</button>
+        <script type="text/javascript">
+
+        var elem = document.documentElement;
+
+        function scene4() {
+          document.body.style.backgroundColor = 'AZURE';
+          document.body.style.color = 'AZURE';
+
+          var elem = document.createElement('style');
+          elem.setAttribute("type", "text/css");
+          var style = document.createTextNode("A:link, A:visited { color: AZURE; }")
+          elem.appendChild(style);
+          document.getElementsByTagName("head")[0].appendChild(elem);
+
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+          }
+
+        }
+        </script>
+
+    <button type="button" class="nav--theme-button" style="background:GHOSTWHITE;" onclick="scene5()">
+        Ghost White</button>
+        <script type="text/javascript">
+
+        var elem = document.documentElement;
+
+        function scene5() {
+          document.body.style.backgroundColor = 'GHOSTWHITE';
+          document.body.style.color = 'GHOSTWHITE';
+
+          var elem = document.createElement('style');
+          elem.setAttribute("type", "text/css");
+          var style = document.createTextNode("A:link, A:visited { color: GHOSTWHITE; }")
+          elem.appendChild(style);
+          document.getElementsByTagName("head")[0].appendChild(elem);
+
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+          }
+
+        }
+        </script>
+
+    <button type="button" class="nav--theme-button" style="background:MISTYROSE;" onclick="scene6()">
+        Misty Rose</button>
+        <script type="text/javascript">
+
+        var elem = document.documentElement;
+
+        function scene6() {
+          document.body.style.backgroundColor = 'MISTYROSE';
+          document.body.style.color = 'MISTYROSE';
+
+          var elem = document.createElement('style');
+          elem.setAttribute("type", "text/css");
+          var style = document.createTextNode("A:link, A:visited { color: MISTYROSE; }")
+          elem.appendChild(style);
+          document.getElementsByTagName("head")[0].appendChild(elem);
+
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+          }
+
+        }
+        </script>
+
+    <button type="button" class="nav--theme-button" style="background:SKYBLUE;" onclick="scene7()">
+        Sky Blue Colour</button>
+        <script type="text/javascript">
+
+        var elem = document.documentElement;
+
+        function scene7() {
+          document.body.style.backgroundColor = 'SKYBLUE';
+          document.body.style.color = 'SKYBLUE';
+
+          var elem = document.createElement('style');
+          elem.setAttribute("type", "text/css");
+          var style = document.createTextNode("A:link, A:visited { color: SKYBLUE; }")
+          elem.appendChild(style);
+          document.getElementsByTagName("head")[0].appendChild(elem);
+
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+          }
+
+        }
+        </script>
+
+    <button type="button" class="nav--theme-button" style="background:LEMONCHIFFON;" onclick="scene8()">
+            Lemon Chiffon</button>
+            <script type="text/javascript">
+
+            var elem = document.documentElement;
+
+            function scene8() {
+              document.body.style.backgroundColor = 'LEMONCHIFFON';
+              document.body.style.color = 'LEMONCHIFFON';
 
               var elem = document.createElement('style');
               elem.setAttribute("type", "text/css");
-              var style = document.createTextNode("A:link, A:visited { color: white; }")
+              var style = document.createTextNode("A:link, A:visited { color: LEMONCHIFFON; }")
               elem.appendChild(style);
               document.getElementsByTagName("head")[0].appendChild(elem);
 
@@ -218,217 +398,42 @@ a:visited {
                 elem.msRequestFullscreen();
               }
 
-              }
-              </script>
-
-      <button type="button" class="header--theme-button" style="background:ANTIQUEWHITE;" onclick="scene3()">
-          Antique White</button>
-          <script type="text/javascript">
-
-          var elem = document.documentElement;
-
-          function scene3() {
-            document.body.style.backgroundColor = 'ANTIQUEWHITE';
-            document.body.style.color = 'ANTIQUEWHITE';
-
-            var elem = document.createElement('style');
-            elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: ANTIQUEWHITE; }")
-            elem.appendChild(style);
-            document.getElementsByTagName("head")[0].appendChild(elem);
-
-            if (elem.requestFullscreen) {
-              elem.requestFullscreen();
-            } else if (elem.mozRequestFullScreen) { /* Firefox */
-              elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-              elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { /* IE/Edge */
-              elem.msRequestFullscreen();
             }
+            </script>
 
-          }
-          </script>
+    <button type="button" class="nav--theme-button" style="background:PEACHPUFF;" onclick="scene9()">
+                Peach Puff</button>
+                <script type="text/javascript">
 
-      <button type="button" class="header--theme-button" style="background:AZURE;" onclick="scene4()">
-          Azure Colour</button>
-          <script type="text/javascript">
+                var elem = document.documentElement;
 
-          var elem = document.documentElement;
+                function scene9() {
+                  document.body.style.backgroundColor = 'PEACHPUFF';
+                  document.body.style.color = 'PEACHPUFF';
 
-          function scene4() {
-            document.body.style.backgroundColor = 'AZURE';
-            document.body.style.color = 'AZURE';
+                  var elem = document.createElement('style');
+                  elem.setAttribute("type", "text/css");
+                  var style = document.createTextNode("A:link, A:visited { color: PEACHPUFF; }")
+                  elem.appendChild(style);
+                  document.getElementsByTagName("head")[0].appendChild(elem);
 
-            var elem = document.createElement('style');
-            elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: AZURE; }")
-            elem.appendChild(style);
-            document.getElementsByTagName("head")[0].appendChild(elem);
+                    if (elem.requestFullscreen) {
+                      elem.requestFullscreen();
+                    } else if (elem.mozRequestFullScreen) { /* Firefox */
+                      elem.mozRequestFullScreen();
+                    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                      elem.webkitRequestFullscreen();
+                    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                      elem.msRequestFullscreen();
+                    }
 
-            if (elem.requestFullscreen) {
-              elem.requestFullscreen();
-            } else if (elem.mozRequestFullScreen) { /* Firefox */
-              elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-              elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { /* IE/Edge */
-              elem.msRequestFullscreen();
-            }
-
-          }
-          </script>
-
-      <button type="button" class="header--theme-button" style="background:GHOSTWHITE;" onclick="scene5()">
-          Ghost White</button>
-          <script type="text/javascript">
-
-          var elem = document.documentElement;
-
-          function scene5() {
-            document.body.style.backgroundColor = 'GHOSTWHITE';
-            document.body.style.color = 'GHOSTWHITE';
-
-            var elem = document.createElement('style');
-            elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: GHOSTWHITE; }")
-            elem.appendChild(style);
-            document.getElementsByTagName("head")[0].appendChild(elem);
-
-            if (elem.requestFullscreen) {
-              elem.requestFullscreen();
-            } else if (elem.mozRequestFullScreen) { /* Firefox */
-              elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-              elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { /* IE/Edge */
-              elem.msRequestFullscreen();
-            }
-
-          }
-          </script>
-
-      <button type="button" class="header--theme-button" style="background:MISTYROSE;" onclick="scene6()">
-          Misty Rose</button>
-          <script type="text/javascript">
-
-          var elem = document.documentElement;
-
-          function scene6() {
-            document.body.style.backgroundColor = 'MISTYROSE';
-            document.body.style.color = 'MISTYROSE';
-
-            var elem = document.createElement('style');
-            elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: MISTYROSE; }")
-            elem.appendChild(style);
-            document.getElementsByTagName("head")[0].appendChild(elem);
-
-            if (elem.requestFullscreen) {
-              elem.requestFullscreen();
-            } else if (elem.mozRequestFullScreen) { /* Firefox */
-              elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-              elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { /* IE/Edge */
-              elem.msRequestFullscreen();
-            }
-
-          }
-          </script>
-
-      <button type="button" class="header--theme-button" style="background:SKYBLUE;" onclick="scene7()">
-          Sky Blue Colour</button>
-          <script type="text/javascript">
-
-          var elem = document.documentElement;
-
-          function scene7() {
-            document.body.style.backgroundColor = 'SKYBLUE';
-            document.body.style.color = 'SKYBLUE';
-
-            var elem = document.createElement('style');
-            elem.setAttribute("type", "text/css");
-            var style = document.createTextNode("A:link, A:visited { color: SKYBLUE; }")
-            elem.appendChild(style);
-            document.getElementsByTagName("head")[0].appendChild(elem);
-
-            if (elem.requestFullscreen) {
-              elem.requestFullscreen();
-            } else if (elem.mozRequestFullScreen) { /* Firefox */
-              elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-              elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { /* IE/Edge */
-              elem.msRequestFullscreen();
-            }
-
-          }
-          </script>
-
-      <button type="button" class="header--theme-button" style="background:LEMONCHIFFON;" onclick="scene8()">
-              Lemon Chiffon</button>
-              <script type="text/javascript">
-
-              var elem = document.documentElement;
-
-              function scene8() {
-                document.body.style.backgroundColor = 'LEMONCHIFFON';
-                document.body.style.color = 'LEMONCHIFFON';
-
-                var elem = document.createElement('style');
-                elem.setAttribute("type", "text/css");
-                var style = document.createTextNode("A:link, A:visited { color: LEMONCHIFFON; }")
-                elem.appendChild(style);
-                document.getElementsByTagName("head")[0].appendChild(elem);
-
-                if (elem.requestFullscreen) {
-                  elem.requestFullscreen();
-                } else if (elem.mozRequestFullScreen) { /* Firefox */
-                  elem.mozRequestFullScreen();
-                } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-                  elem.webkitRequestFullscreen();
-                } else if (elem.msRequestFullscreen) { /* IE/Edge */
-                  elem.msRequestFullscreen();
                 }
+                </script>
 
-              }
-              </script>
-
-      <button type="button" class="header--theme-button" style="background:PEACHPUFF;" onclick="scene9()">
-                  Peach Puff</button>
-                  <script type="text/javascript">
-
-                  var elem = document.documentElement;
-
-                  function scene9() {
-                    document.body.style.backgroundColor = 'PEACHPUFF';
-                    document.body.style.color = 'PEACHPUFF';
-
-                    var elem = document.createElement('style');
-                    elem.setAttribute("type", "text/css");
-                    var style = document.createTextNode("A:link, A:visited { color: PEACHPUFF; }")
-                    elem.appendChild(style);
-                    document.getElementsByTagName("head")[0].appendChild(elem);
-
-                      if (elem.requestFullscreen) {
-                        elem.requestFullscreen();
-                      } else if (elem.mozRequestFullScreen) { /* Firefox */
-                        elem.mozRequestFullScreen();
-                      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-                        elem.webkitRequestFullscreen();
-                      } else if (elem.msRequestFullscreen) { /* IE/Edge */
-                        elem.msRequestFullscreen();
-                      }
-
-                  }
-                  </script>
-
-    </div>
   </div>
 
-<!-- <div class="nav">
-    <ul class="nav-links">
+
+    <!-- <ul class="nav-links">
       <li class="nav-links--link active">
         Home
       </li>
@@ -438,15 +443,16 @@ a:visited {
       <li class="nav-links--link">
         Contact Us
       </li>
-    </ul>
-  </div> -->
+    </ul> -->
+
+  </div>
 
 
 
   <div class="content">
         <span class="content-note">
           <main id="site_main" aria-label="content">
-    <p>Color and Hue offers the possibility to use your computer screen as a light. Disable your screensaver / powersaver, and choose your colour from above - the window should fill your screen automatically (presuming your web browser supports and has JavaScript active). Press ESC on your keyboard or click the Escape / Home button to exit full screen & regain the menu bar.</p>
+    Color and Hue offers the possibility to use your computer screen as a light. Disable your screensaver / powersaver, and choose your colour from above - the window should fill your screen automatically (presuming your web browser supports and has JavaScript active). Press ESC on your keyboard or click the Escape / Home button to exit full screen & regain the menu bar.
     <p>This can be an excellent way to give old devices an occasional modern use: to create interesting lighting effects in spaces, particuarly if your vintage device is an industrial design icon. Obviously, this shouldn't be used as a continuous light due to relatively high watt/lumen energy consumption. Additonally, the brightness & accuracy of the colour delivered is completely dependant upon the accuracy of your device screen, and how it's various settings are configured (e.g. colour temperature, brightness, contrast etc.)</p>
     <p>In the near term, I intend releasing a standalone screensaver for Mac OS X (Universal Binary) & Windows 98+, as soon as I figure out how to cobble together snippets of code from Stack Overflow. This will be accessible on <a href="https://github.com/DarraghRogan/Color-And-Hue">GitHub</a></p>
     <p>Longer term, it is my ambition to integrate some luminaire class code from one of the IOT community suites (e.g. Hue or HomeKit) to enable vintage devices have their screen output be controlled in tandem with contemporary IOT devices.</p>
