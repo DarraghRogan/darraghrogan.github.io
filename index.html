@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+<meta name="Description" content="Color and Hue offers the possibility to use your vintage computer as a light">
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+<!-- <meta name="theme-color" content="yellow"/> -->
+
   <title>Color and Hue - turn your screen into a light</title>
     <style>
         :root {
@@ -59,12 +66,12 @@ background-color: #f2f3f4;
 
 /* unvisited link */
 a:link {
-    color: gray;
+    color: #373D3F;
 }
 
 /* visited link */
 a:visited {
-    color: gray;
+    color: #373D3F;
 }
 
 
@@ -138,7 +145,7 @@ a:visited {
   padding: 0;
   box-shadow: 0 0 3px silver;
   text-align: center;
-    font-size: 8px;
+    font-size: 12px;
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -159,7 +166,7 @@ a:visited {
     </div>
     <div class="header-settings">
       <button type="button" class="header--theme-button" style="background:#f2f3f4; color:#373D3F" onclick="scene1()">
-          Escape</button>
+          Escape / Home</button>
             <script type="text/javascript">
 
             var elem = document.documentElement;
@@ -188,7 +195,7 @@ a:visited {
             </script>
 
       <button type="button" class="header--theme-button" style="background:white;" onclick="scene2()">
-              White</button>
+              Pure White</button>
               <script type="text/javascript">
 
               var elem = document.documentElement;
@@ -246,7 +253,7 @@ a:visited {
           </script>
 
       <button type="button" class="header--theme-button" style="background:AZURE;" onclick="scene4()">
-          Azure</button>
+          Azure Colour</button>
           <script type="text/javascript">
 
           var elem = document.documentElement;
@@ -333,7 +340,7 @@ a:visited {
           </script>
 
       <button type="button" class="header--theme-button" style="background:SKYBLUE;" onclick="scene7()">
-          Sky Blue</button>
+          Sky Blue Colour</button>
           <script type="text/javascript">
 
           var elem = document.documentElement;
@@ -440,12 +447,14 @@ a:visited {
 
   <div class="content">
         <span class="content-note">
-    <p>Color and Hue offers the possibility to use your computer screen as a light. Disable your screensaver / powersaver, and choose your colour from above - the window should fill your screen automatically. Press ESC on your keyboard or click the Escape button to exit full screen & regain the menu bar.</p>
+          <main id="site_main" aria-label="content">
+    <p>Color and Hue offers the possibility to use your computer screen as a light. Disable your screensaver / powersaver, and choose your colour from above - the window should fill your screen automatically (presuming your web browser supports and has JavaScript active). Press ESC on your keyboard or click the Escape / Home button to exit full screen & regain the menu bar.</p>
     <p>This can be an excellent way to give old devices an occasional modern use: to create interesting lighting effects in spaces, particuarly if your vintage device is an industrial design icon. Obviously, this shouldn't be used as a continuous light due to relatively high watt/lumen energy consumption. Additonally, the brightness & accuracy of the colour delivered is completely dependant upon the accuracy of your device screen, and how it's various settings are configured (e.g. colour temperature, brightness, contrast etc.)</p>
     <p>In the near term, I intend releasing a standalone screensaver for Mac OS X (Universal Binary) & Windows 98+, as soon as I figure out how to cobble together snippets of code from Stack Overflow. This will be accessible on <a href="https://github.com/DarraghRogan/Color-And-Hue">GitHub</a></p>
     <p>Longer term, it is my ambition to integrate some luminaire class code from one of the IOT community suites (e.g. Hue or HomeKit) to enable vintage devices have their screen output be controlled in tandem with contemporary IOT devices.</p>
     <p>I also wish to include some code (on this webpage) to output the ideal light colour based on the time of day (a la Nightshift or equivalent Circadian Rhythm methodology). I wish to investigate some means of reporting back system parameters to the user such as current brightness settings etc, depending upon what is avaiable via the web browser. And include some way of the user choosing their own hue, saturation & luminosity.</p>
     <p>This webpage has been principally adapted from code by <a href="https://stackoverflow.com/users/5894241/nisarg-shah">Nisarg Shah</a> on <a href="https://stackoverflow.com/a/48851168">Stack Overflow.</a> The website is accessible using HTTP rather than HTTPS, in order to permit older web connected devices access it (as often they do not recognise modern SSL certificates etc.). Whilst not the case yet, the intention is that all code required will be both compatible and lightweight enough to work on 1990s era web browsers.</p>
+    </main>
         </span>
   </div>
 
