@@ -188,14 +188,14 @@ bottom:3px;
 right:3px
 }
 
-/* 
+
 .background-color
 {
 z-index:0;
 cursor:pointer;
 background-color:rgba(255,255,255,0)
 }
-*/
+
 
 .exposed .bg
 {
@@ -541,9 +541,11 @@ url('/fonts/caviardreams-webfont.eot') format('embedded-opentype')}
 box-sizing:border-box
 }
 
+
 html
 {
 text-align:center;
+/*
 -webkit-background-size:80px 80px;
 -moz-background-size:80px 80px;
 -o-background-size:80px 80px;
@@ -553,14 +555,17 @@ background-image:-webkit-linear-gradient(left top, rgba(0,0,0,0.1) 25%,rgba(0,0,
 background-image:-moz-linear-gradient(left top, rgba(0,0,0,0.1) 25%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.1) 75%,rgba(0,0,0,0) 75%,rgba(0,0,0,0));
 background-image:-o-linear-gradient(left top, rgba(0,0,0,0.1) 25%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.1) 75%,rgba(0,0,0,0) 75%,rgba(0,0,0,0));
 background-image:linear-gradient(left top, rgba(0,0,0,0.1) 25%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.1) 75%,rgba(0,0,0,0) 75%,rgba(0,0,0,0));
-background-color:#2a2a2a}
+background-color:#2a2a2a
+/*
+}
+
 
 body
 {
 background:none;
 padding:0px 0px 40px;
 display:inline-block;
-font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+/* font-family:"Helvetica Neue", Helvetica, Arial, sans-serif */
 }
 
 body>div,body>section,body>header
