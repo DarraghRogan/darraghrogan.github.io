@@ -4,11 +4,25 @@
 
 .bgs:before,
 
-.slider:before{background-image:-webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));background-image:-moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));background-image:-o-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-o-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));background-image:linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));-webkit-background-size:20px 20px;-moz-background-size:20px 20px;-o-background-size:20px 20px;background-size:20px 20px;background-position:0px 0px, 10px 10px}
+.slider:before{
+background-image:-webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
+background-image:-moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
+background-image:-o-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-o-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
+background-image:linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
+-webkit-background-size:20px 20px;
+-moz-background-size:20px 20px;
+-o-background-size:20px 20px;
+background-size:20px 20px;
+background-position:0px 0px, 10px 10px
+}
 
-.color-tiles:before,.bgs:before,.slider:before,.color-tiles:after,.bgs:after,.slider:after{content:"";z-index:-2}
+.color-tiles:before,.bgs:before,.slider:before,.color-tiles:after,.bgs:after,.slider:after{
+content:"";z-index:-2
+}
 
-.color-tiles:after,.bgs:after,.slider:after{background:rgba(0,0,0,0.3);position:absolute;top:-3px;bottom:-3px;left:-4px;right:-4px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px;-moz-box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px;box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px}
+.color-tiles:after,.bgs:after,.slider:after
+{
+background:rgba(0,0,0,0.3);position:absolute;top:-3px;bottom:-3px;left:-4px;right:-4px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px;-moz-box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px;box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px}
 
 .color-tiles:before,.bgs:before,.slider:before{position:absolute;top:0;bottom:0;left:0;right:0}.color-tiles{position:relative;width:119px;height:119px;margin-bottom:15px;margin-right:10px;margin-top:3px;float:left;background-color:rgba(255,255,255,0);-webkit-transition:background-color 0.1s;-moz-transition:background-color 0.1s;-o-transition:background-color 0.1s;transition:background-color 0.1s;-webkit-border-radius:6px;-moz-border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;border-radius:6px}
 
