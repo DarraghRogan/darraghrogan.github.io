@@ -1,520 +1,483 @@
-#hslpicker{margin:0 auto}
-
-.color-tiles:before,
-
-.bgs:before,
-
-.slider:before
-{
-background-image:-webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
-background-image:-moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
-background-image:-o-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-o-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
-background-image:linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
--webkit-background-size:20px 20px;
--moz-background-size:20px 20px;
--o-background-size:20px 20px;
-background-size:20px 20px;
-background-position:0px 0px, 10px 10px
+#hslpicker {
+    margin: 0 auto
 }
 
-.color-tiles:before,.bgs:before,.slider:before,.color-tiles:after,.bgs:after,.slider:after
-{
-content:"";z-index:-2
+.color-tiles:before, .bgs:before, .slider:before {
+    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
+    background-image: -moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-moz-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
+    background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),-o-linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),linear-gradient(45deg, rgba(255,255,255,0.2) 25%,transparent 25%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2));
+    -webkit-background-size: 20px 20px;
+    -moz-background-size: 20px 20px;
+    -o-background-size: 20px 20px;
+    background-size: 20px 20px;
+    background-position: 0px 0px, 10px 10px
 }
 
-.color-tiles:after,.bgs:after,.slider:after
-{
-background:rgba(0,0,0,0.3);position:absolute;top:-3px;bottom:-3px;left:-4px;right:-4px;-webkit-box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px;-moz-box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px;box-shadow:rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px}
-
-.color-tiles:before,.bgs:before,.slider:before
-{
-position:absolute;top:0;bottom:0;left:0;right:0
+.color-tiles:before,.bgs:before,.slider:before,.color-tiles:after,.bgs:after,.slider:after {
+    content: "";
+    z-index: -2
 }
 
-.color-tiles
-{
-position:relative;width:119px;height:119px;margin-bottom:15px;margin-left:50px;margin-top:3px;
-float:right;background-color:rgba(255,255,255,0);
--webkit-transition:background-color 0.1s;
--moz-transition:background-color 0.1s;
--o-transition:background-color 0.1s;
-transition:background-color 0.1s;
--webkit-border-radius:6px;
--moz-border-radius:6px;
--ms-border-radius:6px;
--o-border-radius:6px;
-border-radius:6px
+.color-tiles:after,.bgs:after,.slider:after {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: -4px;
+    right: -4px;
+    -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px;
+    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px;
+    box-shadow: rgba(0,0,0,0.3) 0 1px inset,rgba(255,255,255,0.1) 0 1px
 }
 
-.color-tiles:after
-{
--moz-border-radius-topright:8px;
--webkit-border-top-right-radius:8px;
-border-top-right-radius:8px;
--moz-border-radius-bottomright:8px;
--webkit-border-bottom-right-radius:8px;
-border-bottom-right-radius:8px
+.color-tiles:before,.bgs:before,.slider:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
 }
 
-.color-tiles:before
-{
--webkit-border-radius:5px;
--moz-border-radius:5px;
--ms-border-radius:5px;
--o-border-radius:5px;
-border-radius:5px
+.color-tiles {
+    position: relative;
+    width: 119px;
+    height: 119px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-top: 3px;
+    float: right;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: background-color 0.1s;
+    -moz-transition: background-color 0.1s;
+    -o-transition: background-color 0.1s;
+    transition: background-color 0.1s;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px
 }
 
-.color-tiles 
-
-.tile
-{
--webkit-border-radius:5px;
--moz-border-radius:5px;
--ms-border-radius:5px;
--o-border-radius:5px;
-border-radius:5px
+.color-tiles:after {
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px
 }
 
-.color-tiles 
-div 
-.tile
-{
-position:absolute;top:0;
-bottom:0;left:0;right:0
+.color-tiles:before {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px
 }
 
-.color-tiles div 
-.tile,.color-tiles 
-.bg
-{
--webkit-box-shadow:rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px;
--moz-box-shadow:rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px;
-box-shadow:rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px
+.color-tiles .tile {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px
 }
 
-.foreground,.background
-{
-position:absolute;
-width:119px;height:119px
+.color-tiles div .tile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
 }
 
-.foreground
-{z-index:2}
-
-.background
-{
-background-color:rgba(255,255,255,0)
+.color-tiles div .tile,.color-tiles .bg {
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px
 }
 
-.expose
-{
--webkit-transition:all 0.15s ease-out;
--moz-transition:all 0.15s ease-out;
--o-transition:all 0.15s ease-out;
-transition:all 0.15s ease-out;
--webkit-border-radius:2px;
--moz-border-radius:2px;
--ms-border-radius:2px;
--o-border-radius:2px;
-border-radius:2px;
-position:absolute;
-top:5px;right:5px;width:16px;height:16px;
-z-index:2;
-cursor:pointer;
-opacity:.4;
-background:rgba(0,0,0,0.8)
+.foreground,.background {
+    position: absolute;
+    width: 119px;
+    height: 119px
 }
 
-.expose:before,.expose:after
-{
-content:"";
-position:absolute;
-height:5px;
-width:5px
+.foreground {
+    z-index: 2
 }
 
-.expose:before
-{
-border:solid 2px rgba(255,255,255,0.8);
-border-bottom:0;
-border-right:0;
-top:3px;left:3px
+.background {
+    background-color: rgba(255,255,255,0)
 }
 
-.expose:after
-{
-border:solid 2px rgba(255,255,255,0.8);
-border-top:0;
-border-left:0;
-bottom:3px;
-right:3px
+.expose {
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+    cursor: pointer;
+    opacity: .4;
+    background: rgba(0,0,0,0.8)
 }
 
-.color-tiles:hover .expose
-{
-opacity:1
+.expose:before,.expose:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px
 }
 
-.exposed .expose,.expose:hover
-{
-width:20px;
-height:20px;
-top:3px;
-right:3px
+.expose:before {
+    border: solid 2px rgba(255,255,255,0.8);
+    border-bottom: 0;
+    border-right: 0;
+    top: 3px;
+    left: 3px
 }
 
-.exposed .expose:before,.exposed .expose:after
-{
-height:4px;
-width:4px
+.expose:after {
+    border: solid 2px rgba(255,255,255,0.8);
+    border-top: 0;
+    border-left: 0;
+    bottom: 3px;
+    right: 3px
 }
 
-.exposed .expose:before
-{
-border:solid 2px rgba(255,255,255,0.8);
-border-top:0;
-border-left:0;
-top:3px;
-left:3px
+.color-tiles:hover .expose {
+    opacity: 1
 }
 
-.exposed .expose:after
-{
-border:solid 2px rgba(255,255,255,0.8);
-border-bottom:0;
-border-right:0;
-bottom:3px;
-right:3px
+.exposed .expose,.expose:hover {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    right: 3px
 }
 
-
-.background-color
-{
-z-index:0;
-cursor:pointer;
-background-color:rgba(255,255,255,0)
+.exposed .expose:before,.exposed .expose:after {
+    height: 4px;
+    width: 4px
 }
 
-
-.exposed .bg
-{
-left:0
+.exposed .expose:before {
+    border: solid 2px rgba(255,255,255,0.8);
+    border-top: 0;
+    border-left: 0;
+    top: 3px;
+    left: 3px
 }
 
-.exposed .foreground
-{
-left:29px;
-top:29px;
-width:90px;
-height:90px
+.exposed .expose:after {
+    border: solid 2px rgba(255,255,255,0.8);
+    border-bottom: 0;
+    border-right: 0;
+    bottom: 3px;
+    right: 3px
 }
 
-.exposed .background
-{
-right:29px;
-width:90px;
-height:90px;
--webkit-box-shadow:rgba(0,0,0,0.8) 0 1px 10px;
--moz-box-shadow:rgba(0,0,0,0.8) 0 1px 10px;
-box-shadow:rgba(0,0,0,0.8) 0 1px 10px
+.background-color {
+    z-index: 0;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0)
 }
 
-.exposed .foreground
-{
--webkit-box-shadow:rgba(0,0,0,0.8) 0 1px 10px;
--moz-box-shadow:rgba(0,0,0,0.8) 0 1px 10px;
-box-shadow:rgba(0,0,0,0.8) 0 1px 10px;cursor:pointer
+.exposed .bg {
+    left: 0
 }
 
-.exposed .selected:after
-{
-content:"";
-position:absolute;
-top:0;
-bottom:0;
-left:0;
-right:0;
--webkit-border-radius:5px;
--moz-border-radius:5px;
--ms-border-radius:5px;
--o-border-radius:5px;
-border-radius:5px;
-z-index:1;
--webkit-box-shadow:rgba(255,255,255,0.5) 0 0 0px 1px inset,rgba(0,0,0,0.5) 0 0 0 5px inset;
--moz-box-shadow:rgba(255,255,255,0.5) 0 0 0px 1px inset,rgba(0,0,0,0.5) 0 0 0 5px inset;
-box-shadow:rgba(255,255,255,0.5) 0 0 0px 1px inset,rgba(0,0,0,0.5) 0 0 0 5px inset;
-cursor:pointer
+.exposed .foreground {
+    left: 29px;
+    top: 29px;
+    width: 90px;
+    height: 90px
 }
 
-.background,.foreground
-{
--webkit-transition:all 0.25s ease-in-out;
--moz-transition:all 0.25s ease-in-out;
--o-transition:all 0.25s ease-in-out;
-transition:all 0.25s ease-in-out
+.exposed .background {
+    right: 29px;
+    width: 90px;
+    height: 90px;
+    -webkit-box-shadow: rgba(0,0,0,0.8) 0 1px 10px;
+    -moz-box-shadow: rgba(0,0,0,0.8) 0 1px 10px;
+    box-shadow: rgba(0,0,0,0.8) 0 1px 10px
 }
 
-.bgs
-{
-position:absolute;
-left:-34px;
-width:30px
+.exposed .foreground {
+    -webkit-box-shadow: rgba(0,0,0,0.8) 0 1px 10px;
+    -moz-box-shadow: rgba(0,0,0,0.8) 0 1px 10px;
+    box-shadow: rgba(0,0,0,0.8) 0 1px 10px;
+    cursor: pointer
 }
 
-.bgs,.bgs:before,.bgs:after
-{
--moz-border-radius-topleft:6px;
--webkit-border-top-left-radius:6px;
-border-top-left-radius:6px;
--moz-border-radius-bottomleft:6px;
--webkit-border-bottom-left-radius:6px;
-border-bottom-left-radius:6px
+.exposed .selected:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    -webkit-box-shadow: rgba(255,255,255,0.5) 0 0 0px 1px inset,rgba(0,0,0,0.5) 0 0 0 5px inset;
+    -moz-box-shadow: rgba(255,255,255,0.5) 0 0 0px 1px inset,rgba(0,0,0,0.5) 0 0 0 5px inset;
+    box-shadow: rgba(255,255,255,0.5) 0 0 0px 1px inset,rgba(0,0,0,0.5) 0 0 0 5px inset;
+    cursor: pointer
 }
 
-.bgs:after
-{
-right:0px
+.background,.foreground {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out
 }
 
-.exposed .bgs div
-{
-left:0
+.bgs {
+    position: absolute;
+    left: -34px;
+    width: 30px
 }
 
-.bgs div
-{
-width:30px;
-height:29px;
-position:relative;
-margin-top:1px;
-cursor:pointer
+.bgs,.bgs:before,.bgs:after {
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px
 }
 
-.bgs div:first-child
-{
--moz-border-radius-topleft:5px;
--webkit-border-top-left-radius:5px;
-border-top-left-radius:5px;
--moz-border-radius-topright:5px;
--webkit-border-top-right-radius:5px;
-border-top-right-radius:5px;
-margin-top:0
+.bgs:after {
+    right: 0px
 }
 
-.bgs div:last-child
-{
--moz-border-radius-bottomleft:5px;
--webkit-border-bottom-left-radius:5px;
-border-bottom-left-radius:5px;
--moz-border-radius-bottomright:5px;
--webkit-border-bottom-right-radius:5px;
-border-bottom-right-radius:5px
+.exposed .bgs div {
+    left: 0
 }
 
-.bgs .none
-{
-background-color:rgba(255,255,255,0)
+.bgs div {
+    width: 30px;
+    height: 29px;
+    position: relative;
+    margin-top: 1px;
+    cursor: pointer
 }
 
-.bgs .light
-{
-background:#fff
+.bgs div:first-child {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 0
 }
 
-.bgs .dark
-{
-background:#000
+.bgs div:last-child {
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px
 }
 
-.bgs .random
-{
-background:
-#007fff
+.bgs .none {
+    background-color: rgba(255,255,255,0)
 }
 
-.bgs .random:after
-{
-content:"";
-height:6px;
-width:6px;
-position:absolute;
-top:0;
-left:0;
--webkit-border-radius:5px;
--moz-border-radius:5px;
--ms-border-radius:5px;
--o-border-radius:5px;
-border-radius:5px;
--webkit-box-shadow:rgba(0,0,0,0.8) 6px 5px,rgba(255,255,255,0.4) 6px 6px 1px,rgba(0,0,0,0.8) 18px 5px,rgba(255,255,255,0.4) 18px 6px 1px,rgba(0,0,0,0.8) 12px 12px,rgba(255,255,255,0.4) 12px 13px 1px,rgba(0,0,0,0.8) 6px 19px,rgba(255,255,255,0.4) 6px 20px 1px,rgba(0,0,0,0.8) 18px 19px,rgba(255,255,255,0.4) 18px 20px 1px;
--moz-box-shadow:rgba(0,0,0,0.8) 6px 5px,rgba(255,255,255,0.4) 6px 6px 1px,rgba(0,0,0,0.8) 18px 5px,rgba(255,255,255,0.4) 18px 6px 1px,rgba(0,0,0,0.8) 12px 12px,rgba(255,255,255,0.4) 12px 13px 1px,rgba(0,0,0,0.8) 6px 19px,rgba(255,255,255,0.4) 6px 20px 1px,rgba(0,0,0,0.8) 18px 19px,rgba(255,255,255,0.4) 18px 20px 1px;
-box-shadow:rgba(0,0,0,0.8) 6px 5px,rgba(255,255,255,0.4) 6px 6px 1px,rgba(0,0,0,0.8) 18px 5px,rgba(255,255,255,0.4) 18px 6px 1px,rgba(0,0,0,0.8) 12px 12px,rgba(255,255,255,0.4) 12px 13px 1px,rgba(0,0,0,0.8) 6px 19px,rgba(255,255,255,0.4) 6px 20px 1px,rgba(0,0,0,0.8) 18px 19px,rgba(255,255,255,0.4) 18px 20px 1px
+.bgs .light {
+    background: #fff
 }
 
-.slider
-{
--webkit-border-radius:10px;
--moz-border-radius:10px;
--ms-border-radius:10px;
--o-border-radius:10px;
-border-radius:10px;
--webkit-transition:background-color 0.1s;
--moz-transition:background-color 0.1s;
--o-transition:background-color 0.1s;
-transition:background-color 0.1s;
-position:relative;
-width:345px;
-margin:3px 5px 10px;
-position:relative;
-cursor:pointer;
-height:20px;
-float:left;clear:left
+.bgs .dark {
+    background: #000
 }
 
-.slider,.slider>div
-{
-width:345px;
-height:20px;
--webkit-box-shadow:rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px,#000 0 0 2px 1px;
--moz-box-shadow:rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px,#000 0 0 2px 1px;
-box-shadow:rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px,#000 0 0 2px 1px
+.bgs .random {
+    background: #007fff
 }
 
-.slider>div
-{
--webkit-border-radius:10px;
--moz-border-radius:10px;
--ms-border-radius:10px;
--o-border-radius:10px;
-border-radius:10px
+.bgs .random:after {
+    content: "";
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0,0,0,0.8) 6px 5px,rgba(255,255,255,0.4) 6px 6px 1px,rgba(0,0,0,0.8) 18px 5px,rgba(255,255,255,0.4) 18px 6px 1px,rgba(0,0,0,0.8) 12px 12px,rgba(255,255,255,0.4) 12px 13px 1px,rgba(0,0,0,0.8) 6px 19px,rgba(255,255,255,0.4) 6px 20px 1px,rgba(0,0,0,0.8) 18px 19px,rgba(255,255,255,0.4) 18px 20px 1px;
+    -moz-box-shadow: rgba(0,0,0,0.8) 6px 5px,rgba(255,255,255,0.4) 6px 6px 1px,rgba(0,0,0,0.8) 18px 5px,rgba(255,255,255,0.4) 18px 6px 1px,rgba(0,0,0,0.8) 12px 12px,rgba(255,255,255,0.4) 12px 13px 1px,rgba(0,0,0,0.8) 6px 19px,rgba(255,255,255,0.4) 6px 20px 1px,rgba(0,0,0,0.8) 18px 19px,rgba(255,255,255,0.4) 18px 20px 1px;
+    box-shadow: rgba(0,0,0,0.8) 6px 5px,rgba(255,255,255,0.4) 6px 6px 1px,rgba(0,0,0,0.8) 18px 5px,rgba(255,255,255,0.4) 18px 6px 1px,rgba(0,0,0,0.8) 12px 12px,rgba(255,255,255,0.4) 12px 13px 1px,rgba(0,0,0,0.8) 6px 19px,rgba(255,255,255,0.4) 6px 20px 1px,rgba(0,0,0,0.8) 18px 19px,rgba(255,255,255,0.4) 18px 20px 1px
 }
 
-.slider:after,.slider:before
-{
--webkit-border-radius:15px;
--moz-border-radius:15px;
--ms-border-radius:15px;
--o-border-radius:15px
-;border-radius:15px
+.slider {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: background-color 0.1s;
+    -moz-transition: background-color 0.1s;
+    -o-transition: background-color 0.1s;
+    transition: background-color 0.1s;
+    position: relative;
+    width: 345px;
+    margin: 3px 5px 10px;
+    position: relative;
+    cursor: pointer;
+    height: 20px;
+    float: left;
+    clear: left
 }
 
-.slider:hover .handle
-{
-background-color:rgba(255,255,255,0.1)
+.slider,.slider>div {
+    width: 345px;
+    height: 20px;
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px,#000 0 0 2px 1px;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px,#000 0 0 2px 1px;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 2px 1px inset,rgba(255,255,255,0.2) 0 1px inset,rgba(0,0,0,0.4) 0 -1px 1px inset,rgba(0,0,0,0.4) 0 1px 1px,#000 0 0 2px 1px
 }
 
-.handle
-{
-position:absolute;
-cursor:pointer;
-z-index:2;
-top:-1px;
-content:" ";
-width:22px;
-height:22px;
-z-index:1;
-background-color:#ddd;
--webkit-transition:background-color 0.4s;
--moz-transition:background-color 0.4s;
--o-transition:background-color 0.4s;
-transition:background-color 0.4s;
-background-image:-webkit-gradient(radial, 50% 0%, 0, 50% 0%, 15, color-stop(0%, rgba(255,255,255,0.9)), color-stop(100%, rgba(255,255,255,0.2)));
-background-image:-webkit-radial-gradient(top center, circle, rgba(255,255,255,0.9),rgba(255,255,255,0.2) 15px);
-background-image:-moz-radial-gradient(top center, circle, rgba(255,255,255,0.9),rgba(255,255,255,0.2) 15px);
-background-image:-o-radial-gradient(top center, circle, rgba(255,255,255,0.9),rgba(255,255,255,0.2) 15px);
-background-image:radial-gradient(top center, circle, rgba(255,255,255,0.9),rgba(255,255,255,0.2) 15px);
--webkit-border-radius:1em;
--moz-border-radius:1em;
--ms-border-radius:1em;
--o-border-radius:1em;
-border-radius:1em;
--webkit-box-shadow:#fff 0px 1px 1px inset,rgba(0,0,0,0.4) 0px -1px 1px inset,rgba(0,0,0,0.4) 0px 1px 4px 0px,rgba(0,0,0,0.6) 0 0 2px;
--moz-box-shadow:#fff 0px 1px 1px inset,rgba(0,0,0,0.4) 0px -1px 1px inset,rgba(0,0,0,0.4) 0px 1px 4px 0px,rgba(0,0,0,0.6) 0 0 2px;
-box-shadow:#fff 0px 1px 1px inset,rgba(0,0,0,0.4) 0px -1px 1px inset,rgba(0,0,0,0.4) 0px 1px 4px 0px,rgba(0,0,0,0.6) 0 0 2px
+.slider>div {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px
 }
 
-.sliders
-{
-overflow:hidden;
-*zoom:1
+.slider:after,.slider:before {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px ;
+    border-radius: 15px
 }
 
-.sliders input
-{
-width:40px;
-text-align:right;
-font-size:.9em;
-padding:3px 4px;
-float:left;
-margin-left:8px
+.slider:hover .handle {
+    background-color: rgba(255,255,255,0.1)
 }
 
-.color-inputs
-{
-clear:left
+.handle {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    top: -1px;
+    content: " ";
+    width: 22px;
+    height: 22px;
+    z-index: 1;
+    background-color: #ddd;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+    background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 15, color-stop(0%, rgba(255,255,255,0.9)), color-stop(100%, rgba(255,255,255,0.2)));
+    background-image: -webkit-radial-gradient(top center, circle, rgba(255,255,255,0.9),rgba(255,255,255,0.2) 15px);
+    background-image: -moz-radial-gradient(top center, circle, rgba(255,255,255,0.9),rgba(255,255,255,0.2) 15px);
+    background-image: -o-radial-gradient(top center, circle, rgba(255,255,255,0.9),rgba(255,255,255,0.2) 15px);
+    background-image: radial-gradient(top center, circle, rgba(255,255,255,0.9),rgba(255,255,255,0.2) 15px);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: #fff 0px 1px 1px inset,rgba(0,0,0,0.4) 0px -1px 1px inset,rgba(0,0,0,0.4) 0px 1px 4px 0px,rgba(0,0,0,0.6) 0 0 2px;
+    -moz-box-shadow: #fff 0px 1px 1px inset,rgba(0,0,0,0.4) 0px -1px 1px inset,rgba(0,0,0,0.4) 0px 1px 4px 0px,rgba(0,0,0,0.6) 0 0 2px;
+    box-shadow: #fff 0px 1px 1px inset,rgba(0,0,0,0.4) 0px -1px 1px inset,rgba(0,0,0,0.4) 0px 1px 4px 0px,rgba(0,0,0,0.6) 0 0 2px
 }
 
-.color-inputs input
-{
-text-align:center;
-margin-left:2px
+.sliders {
+    overflow: hidden;
+    *zoom:1 }
+
+.sliders input {
+    width: 40px;
+    text-align: right;
+    font-size: .9em;
+    padding: 3px 4px;
+    float: left;
+    margin-left: 8px
 }
 
-.color-inputs input:first-child
-{
-margin-left:0
+.color-inputs {
+    clear: left
 }
 
-input
-{
--webkit-transition:all 0.3s;
--moz-transition:all 0.3s;
--o-transition:all 0.3s;
-transition:all 0.3s;
--webkit-border-radius:4px;
--moz-border-radius:4px;
--ms-border-radius:4px;
--o-border-radius:4px;
-border-radius:4px;
--webkit-box-shadow:rgba(255,255,255,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
--moz-box-shadow:rgba(255,255,255,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
-box-shadow:rgba(255,255,255,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
-border:0;
-padding:8px 6px;
-font-size:1em;
-background-color:rgba(0,0,0,0.3);
-color:rgba(255,255,255,0.8);
-/* text-shadow:rgba(0,0,0,0.5) 0 2px 1px */
+.color-inputs input {
+    text-align: center;
+    margin-left: 2px
 }
 
-input:focus
-{
-outline:none;
-color:#fff
+.color-inputs input:first-child {
+    margin-left: 0
 }
 
-#hex
-{
-width:5.7em
+input {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
+    border: 0;
+    padding: 8px 6px;
+    font-size: 1em;
+    background-color: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.8);
+    /* text-shadow:rgba(0,0,0,0.5) 0 2px 1px */
 }
 
-#rgba
-{
-width:14em
+input:focus {
+    outline: none;
+    color: #fff
 }
 
-#hsla
-{
-width:15em
+#hex {
+    width: 5.7em
 }
 
-input.error
-{
--webkit-box-shadow:rgba(255,127,127,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
--moz-box-shadow:rgba(255,127,127,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
-box-shadow:rgba(255,127,127,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
-background-color:rgba(102,0,0,0.3);
-color:#ff0f0f}
+#rgba {
+    width: 14em
+}
+
+#hsla {
+    width: 15em
+}
+
+input.error {
+    -webkit-box-shadow: rgba(255,127,127,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
+    -moz-box-shadow: rgba(255,127,127,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
+    box-shadow: rgba(255,127,127,0.1) 0 1px 0,rgba(0,0,0,0.8) 0 1px 7px 0px inset;
+    background-color: rgba(102,0,0,0.3);
+    color: #ff0f0f
+}
 
 /*
 @font-face
@@ -533,19 +496,15 @@ url('/fonts/caviardreams-webfont.svg') format('svg'),
 url('/fonts/caviardreams-webfont.woff') format('woff'), 
 url('/fonts/caviardreams-webfont.eot') format('embedded-opentype')}
 */
-
-*
-{
--webkit-box-sizing:border-box;
--moz-box-sizing:border-box;
-box-sizing:border-box
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
 
-
-html
-{
-text-align:center;
-/*
+html {
+    text-align: center;
+    /*
 -webkit-background-size:80px 80px;
 -moz-background-size:80px 80px;
 -o-background-size:80px 80px;
@@ -568,15 +527,12 @@ display:inline-block;
 /* font-family:"Helvetica Neue", Helvetica, Arial, sans-serif */
 }
 
-body>div,body>section,body>header
-{
-/* width:590px; */
-margin:0 auto;
-
--webkit-box-sizing:border-box;
--moz-box-sizing:border-box;
-box-sizing:border-box
-
+body>div,body>section,body>header {
+    /* width:590px; */
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
 
 /*
@@ -632,19 +588,13 @@ a{-webkit-transition:color 0.5s;-moz-transition:color 0.5s;-o-transition:color 0
 
 p{margin:0;padding:0 0 1.5em;line-height:1.5em}
 */
-
-
-#hslpicker
-{
-margin:1em 0 2em
-  grid-row: 3;
-  grid-column: 1 / 3;
-
+#hslpicker {
+    margin: 1em 0 2em grid-row: 3;
+    grid-column: 1 / 3;
 }
 
-.frame{
-margin-bottom:1.5em
-
+.frame {
+    margin-bottom: 1.5em
 }
 
 /*
