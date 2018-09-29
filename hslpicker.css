@@ -635,10 +635,13 @@ p{margin:0;padding:0 0 1.5em;line-height:1.5em}
 #hslpicker
 {
 margin:1em 0 2em
+  grid-row: 3;
+  grid-column: 1 / 3;
 }
 
 .frame{
 margin-bottom:1.5em
+
 }
 
 /*
