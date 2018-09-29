@@ -40,7 +40,7 @@ background-color: #f2f3f4;
 .container {
   display: grid;
   grid-template-columns: 80px 1fr 10px;
-  grid-template-rows: 55px 1fr 488px 30px;;
+/*  grid-template-rows: 55px 1fr 132px 30px;; */
   grid-gap: 5px;
 }
 
@@ -202,6 +202,11 @@ a:visited {
                 document.msExitFullscreen();
               }
 
+			  					var x = document.getElementById("hslpicker");
+					
+							x.style.display = "block";
+						
+			  
           }
           </script>
 
@@ -230,8 +235,11 @@ a:visited {
             } else if (elem.msRequestFullscreen) { /* IE/Edge */
               elem.msRequestFullscreen();
             }
-
-            }
+			
+					var x = document.getElementById("hslpicker");
+						x.style.display = "none";
+          
+		  }
             </script>
 
     <button type="button" class="nav--theme-button" style="background:ANTIQUEWHITE;" onclick="scene3()">
@@ -259,7 +267,10 @@ a:visited {
           } else if (elem.msRequestFullscreen) { /* IE/Edge */
             elem.msRequestFullscreen();
           }
-
+		  
+					var x = document.getElementById("hslpicker");
+						x.style.display = "none";
+						
         }
         </script>
 
@@ -289,6 +300,9 @@ a:visited {
             elem.msRequestFullscreen();
           }
 
+		var x = document.getElementById("hslpicker");
+		x.style.display = "none";
+		  
         }
         </script>
 
@@ -318,6 +332,9 @@ a:visited {
             elem.msRequestFullscreen();
           }
 
+		  					var x = document.getElementById("hslpicker");
+						x.style.display = "none";
+		  
         }
         </script>
 
@@ -347,6 +364,9 @@ a:visited {
             elem.msRequestFullscreen();
           }
 
+					var x = document.getElementById("hslpicker");
+						x.style.display = "none";		  
+		  
         }
         </script>
 
@@ -375,7 +395,10 @@ a:visited {
           } else if (elem.msRequestFullscreen) { /* IE/Edge */
             elem.msRequestFullscreen();
           }
-
+		  
+					var x = document.getElementById("hslpicker");
+						x.style.display = "none";
+						
         }
         </script>
 
@@ -405,6 +428,9 @@ a:visited {
                 elem.msRequestFullscreen();
               }
 
+					var x = document.getElementById("hslpicker");
+						x.style.display = "none";			  
+			  
             }
             </script>
 
@@ -434,6 +460,9 @@ a:visited {
                       elem.msRequestFullscreen();
                     }
 
+					var x = document.getElementById("hslpicker");
+						x.style.display = "none";
+	
                 }
                 </script>
 
@@ -464,12 +493,23 @@ a:visited {
     <p>In the near term, I intend releasing a standalone screensaver for Mac OS X (Universal Binary) & Windows 98+, as soon as I figure out how to cobble together snippets of code from Stack Overflow. This will be accessible on <a href="https://github.com/DarraghRogan/Color-And-Hue">GitHub</a></p>
     <p>Longer term, it is my ambition to integrate some luminaire class code from one of the IOT community suites (e.g. Hue or HomeKit) to enable vintage devices have their screen output be controlled in tandem with contemporary IOT devices.</p>
     <p>I also wish to include some code (on this webpage) to output the ideal light colour based on the time of day (a la Nightshift or equivalent Circadian Rhythm methodology). I wish to investigate some means of reporting back system parameters to the user such as current brightness settings etc, depending upon what is avaiable via the web browser. And include some way of the user choosing their own hue, saturation & luminosity.</p>
-    <p>This webpage has been principally adapted from code by <a href="https://stackoverflow.com/users/5894241/nisarg-shah">Nisarg Shah</a> on <a href="https://stackoverflow.com/a/48851168">Stack Overflow.</a> The website is accessible using HTTP rather than HTTPS, in order to permit older web connected devices access it (as often they do not recognise modern SSL certificates etc.). Whilst not the case yet, the intention is that all code required will be both compatible and lightweight enough to work on 1990s era web browsers.</p>
+    <p>This webpage has been principally adapted from code by <a href="https://stackoverflow.com/users/5894241/nisarg-shah">Nisarg Shah</a> on <a href="https://stackoverflow.com/a/48851168">Stack Overflow</a> &amp; <a href="http://hslpicker.com/#fff">Brandon Mathis</a> on <a href="https://github.com/imathis/hsl-picker/">GitHub</a>. The website is accessible using HTTP rather than HTTPS, in order to permit older web connected devices access it (as often they do not recognise modern SSL certificates etc.). Whilst not the case yet, the intention is that all code required will be both compatible and lightweight enough to work on 1990s era web browsers.</p>
     </main>
         </span>
   </div>
 
   <div id="hslpicker">
+<!--
+  Copyright (c) 2011 Brandon Mathis
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
     <div class="frame">
       <div id='tiles' class='color-tiles'>
         <div class='foreground tile selected' data-name='foreground' title='Adjust foreground tile'>
@@ -507,7 +547,7 @@ a:visited {
   <div class="footer">
     <span class="footer-note">
           ColorandHue.com by <a href="https://twitter.com/DarraghRogan">Darragh Rogan</a> 2018.
-          <br>All work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+          <br>All work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, except where specifically noted otherwise in the code (when incorporating works of others, their license terms apply)
           </span>
   </div>
 </div>
