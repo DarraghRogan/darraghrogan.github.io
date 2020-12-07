@@ -1,0 +1,20 @@
+<CiscoIPPhoneDirectory>
+  <Title>Cisco Coporate Directory</Title> 
+  <Prompt>Select the User</Prompt> 
+<DirectoryEntry>
+  <Name>Darragh Mobile</Name> 
+  <Telephone>+353868616425</Telephone> 
+  </DirectoryEntry>
+<DirectoryEntry>
+  <Name>Mirella Mobile</Name> 
+  <Telephone>+353863174441</Telephone> 
+  </DirectoryEntry>
+<DirectoryEntry>
+  <Name>Test Call - Zero Nine Music</Name> 
+  <Telephone>0289304@zero-nine.biz</Telephone> 
+  </DirectoryEntry>
+  <DirectoryEntry>
+  <Name>Test Call - IPTel</Name> 
+  <Telephone>thetestcall@iptel.org</Telephone> 
+  </DirectoryEntry>
+  </CiscoIPPhoneDirectory>
