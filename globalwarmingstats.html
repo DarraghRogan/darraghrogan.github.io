@@ -11,13 +11,23 @@
     <canvas id="temperatureChart" width="400" height="200"></canvas>
     <script>
         async function fetchTemperatureData() {
-            const response = await fetch('https://global-warming.org/api/temperature-api');
-            const data = await response.json();
-            return data.result;
+            try {
+                const response = await fetch('https://global-warming.org/api/temperature-api');
+                const data = await response.json();
+                return data.result;
+            } catch (error) {
+                console.error('Error fetching temperature data:', error);
+                return [];
+            }
         }
 
         async function createChart() {
             const temperatureData = await fetchTemperatureData();
+            if (temperatureData.length === 0) {
+                console.error('No temperature data available');
+                return;
+            }
+
             const labels = temperatureData.map(entry => entry.time);
             const temperatures = temperatureData.map(entry => entry.station);
 
