@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .center
+      {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 384px;
+      height: 384px;
+      background-color: opacity(0%);
+  font-family: "Arial", "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <title>COE Time</title>
+  </head>
+  <body class="center">
+<script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id="057302"
+           data-language="EN"
+           data-unit-system="METRIC"
+           data-skin="dark"
+           data-widget-type="aqiMini"
+           style="padding-bottom:22px;position:relative;"
+        >
+          <a
+            href="https://weather.tomorrow.io/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+          >
+            <img
+              alt="Powered by Tomorrow.io"
+              src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+              width="250"
+              height="18"
+            />
+          </a>
+        </div>
+    </body>
+</html>
